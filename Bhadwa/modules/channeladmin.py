@@ -1,14 +1,14 @@
 from asyncio import QueueEmpty
-from VCsMusicBot.config import que
+from Bhadwa.config import que
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
-from VCsMusicBot.function.admins import set
-from VCsMusicBot.helpers.channelmusic import get_chat_id
-from VCsMusicBot.helpers.decorators import authorized_users_only, errors
-from VCsMusicBot.helpers.filters import command, other_filters
-from VCsMusicBot.services.callsmusic import callsmusic
-from VCsMusicBot.services.queues import queues
+from Bhadwa.function.admins import set
+from Bhadwa.helpers.channelmusic import get_chat_id
+from Bhadwa.helpers.decorators import authorized_users_only, errors
+from Bhadwa.helpers.filters import command, other_filters
+from Bhadwa.services.callsmusic import callsmusic
+from Bhadwa.services.queues import queues
 
 
 @Client.on_message(filters.command(["channelpause","cpause"]) & filters.group & ~filters.edited)

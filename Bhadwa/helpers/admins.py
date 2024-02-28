@@ -2,8 +2,8 @@ from typing import List
 
 from pyrogram.types import Chat
 
-from VCsMusicBot.function.admins import get as gett
-from VCsMusicBot.function.admins import set
+from Bhadwa.function.admins import get as gett
+from Bhadwa.function.admins import set
 
 
 async def get_administrators(chat: Chat) -> List[int]:

@@ -1,9 +1,9 @@
 from pyrogram import Client, filters
 from pyrogram.errors import UserAlreadyParticipant
 import asyncio
-from VCsMusicBot.helpers.decorators import authorized_users_only, errors
-from VCsMusicBot.services.callsmusic.callsmusic import client as USER
-from VCsMusicBot.config import SUDO_USERS
+from Bhadwa.helpers.decorators import authorized_users_only, errors
+from Bhadwa.services.callsmusic.callsmusic import client as USER
+from Bhadwa.config import SUDO_USERS
 
 @Client.on_message(filters.command(["userbotjoin"]) & ~filters.private & ~filters.bot)
 @authorized_users_only

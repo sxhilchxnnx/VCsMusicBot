@@ -16,24 +16,24 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from Python_ARQ import ARQ
 from youtube_search import YoutubeSearch
 
-from VCsMusicBot.config import ARQ_API_KEY
-from VCsMusicBot.config import BOT_NAME as bn
-from VCsMusicBot.config import DURATION_LIMIT
-from VCsMusicBot.config import UPDATES_CHANNEL as updateschannel
-from VCsMusicBot.config import que
-from VCsMusicBot.function.admins import admins as a
-from VCsMusicBot.helpers.admins import get_administrators
-from VCsMusicBot.helpers.channelmusic import get_chat_id
-from VCsMusicBot.helpers.errors import DurationLimitError
-from VCsMusicBot.helpers.decorators import errors
-from VCsMusicBot.helpers.decorators import authorized_users_only
-from VCsMusicBot.helpers.filters import command, other_filters
-from VCsMusicBot.helpers.gets import get_file_name
-from VCsMusicBot.services.callsmusic import callsmusic
-from VCsMusicBot.services.callsmusic.callsmusic import client as USER
-from VCsMusicBot.services.converter.converter import convert
-from VCsMusicBot.services.downloaders import youtube
-from VCsMusicBot.services.queues import queues
+from Bhadwa.config import ARQ_API_KEY
+from Bhadwa.config import BOT_NAME as bn
+from Bhadwa.config import DURATION_LIMIT
+from Bhadwa.config import UPDATES_CHANNEL as updateschannel
+from Bhadwa.config import que
+from Bhadwa.function.admins import admins as a
+from Bhadwa.helpers.admins import get_administrators
+from Bhadwa.helpers.channelmusic import get_chat_id
+from Bhadwa.helpers.errors import DurationLimitError
+from Bhadwa.helpers.decorators import errors
+from Bhadwa.helpers.decorators import authorized_users_only
+from Bhadwa.helpers.filters import command, other_filters
+from Bhadwa.helpers.gets import get_file_name
+from Bhadwa.services.callsmusic import callsmusic
+from Bhadwa.services.callsmusic.callsmusic import client as USER
+from Bhadwa.services.converter.converter import convert
+from Bhadwa.services.downloaders import youtube
+from Bhadwa.services.queues import queues
 
 aiohttpsession = aiohttp.ClientSession()
 chat_id = None
@@ -898,7 +898,7 @@ async def deezer(client: Client, message_: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "VCsMusicBot"
+        user.first_name = "Bhadwa"
     usar = user
     wew = usar.id
     try:
@@ -1036,7 +1036,7 @@ async def jiosaavn(client: Client, message_: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "VCsMusicBot"
+        user.first_name = "Bhadwa"
     usar = user
     wew = usar.id
     try:

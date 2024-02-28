@@ -1,11 +1,11 @@
 import requests
 from pyrogram import Client as Bot
 
-from VCsMusicBot.config import API_HASH
-from VCsMusicBot.config import API_ID
-from VCsMusicBot.config import BG_IMAGE
-from VCsMusicBot.config import BOT_TOKEN
-from VCsMusicBot.services.callsmusic import run
+from Bhadwa.config import API_HASH
+from Bhadwa.config import API_ID
+from Bhadwa.config import BG_IMAGE
+from Bhadwa.config import BOT_TOKEN
+from Bhadwa.services.callsmusic import run
 
 response = requests.get(BG_IMAGE)
 file = open("./etc/foreground.png", "wb")
@@ -17,7 +17,7 @@ bot = Bot(
     API_ID,
     API_HASH,
     bot_token=BOT_TOKEN,
-    plugins=dict(root="VCsMusicBot.modules"),
+    plugins=dict(root="Bhadwa.modules"),
 )
 
 bot.start()
